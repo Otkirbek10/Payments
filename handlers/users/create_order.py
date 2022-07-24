@@ -6,7 +6,7 @@ from loader import dp,bot
 from data.products import macbook,FAST_SHIPPING,REGULAR_SHIPPING,PICKUP_SHIPPING
 from keyboards.inline.product_keys import sozdat_knopka
 
-@dp.message_handler(Command("macbook"))
+@dp.message_handler(text='💻 Kompyuter')
 async def sss(message:types.Message):
     caption = "<b>Ноутбук Apple MacBook Air 2020 (2560x1600, Apple M1 3.2 ГГц, RAM 8 ГБ, SSD 256 ГБ, Apple graphics 7-core)</b>\n\n"
     caption += "Операционная система: macOS\n"
